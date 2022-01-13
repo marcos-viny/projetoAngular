@@ -1,0 +1,28 @@
+<div>
+    <div class="flex relative p-4 bg-red-500 items-center justify-between">
+        <div class="flex items-center">
+            <div class="flex font-bold text-3xl">
+                <h1>M</h1>
+                <h1 class="mt-2">M</h1>
+            </div>
+            <h1>Marcos Moreira</h1>
+        </div>
+        <div class="" [ngClass]="{'iconActive testeActive' : openBot}">
+            <button (click)="openBot = !openBot">
+                <span class="hamburguer">
+                    <span class="hamburguer1">
+                        <span class="hamburguer2">
+                            <span class="hamburguer3"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="teste-x"></span>
+            </button>
+        </div>
+    </div>
+    <div class="teste1" [ngClass]="{ 'teste' : openBot == false}">
+
+        fjshbsvhj
+
+    </div>
+</div>

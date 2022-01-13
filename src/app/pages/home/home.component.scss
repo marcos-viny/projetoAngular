@@ -1,0 +1,97 @@
+.hamburguer {
+    border-top: 3px solid rgba(17, 0, 0, 1);
+    display: block;
+    transition: ease;
+    transition-duration: .5s;
+    width: 35px;
+}
+
+.hamburguer1 {
+    width: 25px;
+    border-top: 3px solid rgba(17, 0, 0, 1);
+    transition: ease;
+    transition-duration: .5s;
+    display: block;
+    margin-top: 3px;
+}
+
+.hamburguer2 {
+    width: 35px;
+    border-top: 3px solid rgba(17, 0, 0, 1);
+    transition: ease;
+    transition-duration: .5s;
+    display: block;
+    margin-top: 3px;
+}
+
+.hamburguer3 {
+    width: 20px;
+    border-top: 3px solid rgba(17, 0, 0, 1);
+    transition: ease;
+    transition-duration: .5s;
+    display: block;
+    margin-top: 3px;
+}
+
+.teste {
+    opacity: 0;
+    background-color: red;
+    transform: translateY(50px);
+    height: 200px;
+}
+
+.teste1 {
+    transition: 0.5s ease-in;
+    background-color: blue;
+    // transform: scaleY(2.1);
+    height: 200px;
+}
+
+.iconActive {
+    .hamburguer,
+    .hamburguer1,
+    .hamburguer2,
+    .hamburguer3 {
+        transition-duration: .5s;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.teste-x {
+    width: 30px;
+    border-top: 3px solid rgba(17, 0, 0, 1);
+    transition: ease;
+    transition-duration: .5s;
+    display: block;
+    margin-top: -15px;
+    opacity: 0;
+}
+
+.teste-x::before {
+    width: 30px;
+    border-top: 3px solid rgba(17, 0, 0, 1);
+    content: "";
+    display: block;
+    position: relative;
+    transition: ease;
+    transition-duration: .5s;
+    opacity: 0;
+}
+
+.testeActive {
+    .teste-x {
+        transform: rotate(135deg);
+        transition-duration: .5s;
+        opacity: 1;
+    }
+}
+
+.testeActive {
+    .teste-x::before {
+        transform: rotate(95deg);
+        transition-duration: .5s;
+        top: -3px;
+        opacity: 1;
+    }
+}
