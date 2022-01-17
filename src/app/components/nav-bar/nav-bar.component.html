@@ -1,0 +1,73 @@
+<nav class="navbar px-4  fixed-top" [ngClass]="{'sidebar-open': opened}">
+
+    <button id="btn-mobile" (click)="toggle()" [ngClass]="{'ativado': opened}">
+        <span class="hamburguer">
+            <span class="hamburguer1">
+                <span class="hamburguer2">
+                    <span class="hamburguer3"></span>
+                </span>
+            </span>
+        </span>
+        
+       
+    </button>
+
+    <a href="#">
+        <img src="../../../assets/images/logo.png" class="h-6" alt="Netflix">
+    </a>
+
+    <ul class="nav text-white d-none d-lg-flex">
+        <li class="nav-item d-xl-none">
+            <a class="nav-link active text-reset" href="#">Navegar</a>
+        </li>
+        <li class="nav-item d-xl-none">
+            <a class="nav-link text-reset" href="#">Infantil</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link active text-reset" href="#">Inicío</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Séries</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Filmes</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Adicionados recentemente</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Minha lista</a>
+        </li>
+    </ul>
+
+    <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Busca">
+    </form>
+
+    <div class="media text-white p-2 d-none d-lg-flex">
+        <img src="" alt="Avatar" class="mr-2">
+        <div class="media-body">
+            <p class="h6 m-0 text-uppercase">Marcos Vinicius</p>
+        </div>
+    </div>
+
+    <ul class="list-unstyled font-weight-bold sidebar">
+        <li class="media media-avatar">
+            <img src="" alt="Avatar" class="mr-2">
+            <div class="media-body">
+                <p class="h6 m-0">Marcos Vinicius</p>
+                <small>Trocar de perfil</small>
+            </div>
+        </li>
+        <li class="divider"></li>
+        <li><a href="#" class="text-reset">Inicio</a></li>
+        <li><a href="#" class="text-reset">Minha lista</a></li>
+        <li><a href="#" class="text-reset">Séries de ação e aventura</a></li>
+        <li><a href="#" class="text-reset">Ação e aventura</a></li>
+        <li><a href="#" class="text-reset">Séries teen</a></li>
+        <li><a href="#" class="text-reset">Filmes africanos</a></li>
+        <li><a href="#" class="text-reset">Séries da América Latina</a></li>
+        <li><a href="#" class="text-reset">Filmes de Anime</a></li>
+    </ul>
+
+</nav>
