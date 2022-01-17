@@ -6,11 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public menuOpened : boolean=false;
+  public menuOpened : boolean = false;
 
   setMenuState(state:boolean){
     this.menuOpened = state;
   };
+
+  closeMenu(){
+    this.menuOpened = false;
+  }
 
 
   public listTitle = [{
@@ -18,7 +22,7 @@ export class AppComponent {
       cover:'../../../assets/images/guardios-da-galaxia.jpg',
       name:'Guardiões da Galaxia',
       relevance:'98',
-      age:'0',
+      age:'12',
       parts:'2',
       categories:['epico', 'ação', 'fantasia']
   },
@@ -26,19 +30,20 @@ export class AppComponent {
     trailer:'../../../assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
     cover:'../../../assets/images/guardios-da-galaxia.jpg',
     name:'Homem Aranha',
-    relevance:'98',
-    age:'12',
+    relevance:'91',
+    age:'0',
     parts:'1',
-    categories:['epico', 'ação', 'fantasia']
+    categories:['epico', 'terror', 'fantasia']
 },
 {
   trailer:'../../../assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
   cover:'../../../assets/images/guardios-da-galaxia.jpg',
   name:'Vingadores',
-  relevance:'98',
+  relevance:'97',
   age:'18',
   parts:'3',
-  categories:['epico', 'ação', 'fantasia']
+  categories:['epico', 'comedia', 'fantasia']
 }];
+
 
 }
